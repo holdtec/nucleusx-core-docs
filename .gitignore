@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Production builds
+/dist
+/build
+/.vuepress/dist
+
+# VuePress temp files
+.vuepress/.cache/
+.vuepress/.temp/
+
+# Environment variables
+.env*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Coverage
+/coverage
+
+# Nuxt
+.nuxt
+.output
+
+# Lock files
+package-lock.json
+yarn.lock
+
+# Temporary files
+tmp/
+temp/
