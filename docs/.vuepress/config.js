@@ -1,7 +1,9 @@
 import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from '@vuepress/theme-default'
 import { viteBundler } from '@vuepress/bundler-vite'
-import searchPlugin from '@vuepress/plugin-search'
+import { searchPlugin } from '@vuepress/plugin-search'
+import { pwaPlugin } from '@vuepress/plugin-pwa'
+import { pwaPopupPlugin } from '@vuepress/plugin-pwa-popup'
 
 export default defineUserConfig({
   base: '/nucleusx-core-docs/',
@@ -16,7 +18,32 @@ export default defineUserConfig({
           placeholder: '搜索',
         }
       }
-    })
+    }),
+    pwaPlugin({
+      favicon: '/favicon.ico',
+      cacheHTML: true,
+      cachePic: true,
+      appendBase: true,
+      themeColor: '#3eaf7c',
+      apple: {
+        icon: '/assets/img/apple-icon-152.png',
+        statusBarColor: 'black'
+      },
+      msTile: {
+        image: '/assets/img/ms-icon-144.png',
+        color: '#ffffff'
+      },
+      popupComponent: 'PwaPopup',
+      locales: {
+        '/': {
+          install: 'Install',
+          hint: 'Available offline',
+          update: 'New content is available.',
+          updateHint: 'Hit the refresh button to update promptly.'
+        }
+      }
+    }),
+    pwaPopupPlugin()
   ],
 
   theme: defaultTheme({

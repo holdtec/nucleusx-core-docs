@@ -1,0 +1,45 @@
+<template><div><h1 id="指南" tabindex="-1"><a class="header-anchor" href="#指南"><span>指南</span></a></h1>
+<p>欢迎使用 NucleusX-Core 指南。本指南将帮助您快速了解和使用 NucleusX 运行时核心库。</p>
+<h2 id="什么是-nucleusx-core" tabindex="-1"><a class="header-anchor" href="#什么是-nucleusx-core"><span>什么是 NucleusX-Core？</span></a></h2>
+<p><code v-pre>@nucleusx/core</code> 是一套面向 <strong>中大型、多端、长生命周期应用</strong> 的运行时核心库，用于 <strong>统一管理业务逻辑的运行、状态与跨端行为</strong>，降低平台差异对业务演进的影响。</p>
+<p>本库以 <strong>&quot;业务逻辑长期稳定&quot;</strong> 为设计目标，适用于需要持续演进、多人协作、跨端运行的企业级项目。</p>
+<h2 id="核心能力" tabindex="-1"><a class="header-anchor" href="#核心能力"><span>核心能力</span></a></h2>
+<p>NucleusX Core 提供了一套统一的运行时治理能力，用于承载和保护业务逻辑资产：</p>
+<ul>
+<li><strong>业务逻辑去平台化</strong> - 业务代码不直接依赖小程序/H5/UI框架API</li>
+<li><strong>统一运行时上下文</strong> - 请求、状态、日志等能力通过统一入口访问</li>
+<li><strong>可配置式集成</strong> - 根据运行环境注入不同实现，无需修改业务代码</li>
+<li><strong>适合复杂业务流程</strong> - 支持多页面、多步骤、跨端一致的业务流程管理</li>
+</ul>
+<h2 id="适合的场景" tabindex="-1"><a class="header-anchor" href="#适合的场景"><span>适合的场景</span></a></h2>
+<ul>
+<li>企业级核心业务系统</li>
+<li>多端（小程序/H5/App）统一业务逻辑</li>
+<li>5人以上团队协作开发</li>
+<li>需要长期维护、持续迭代的产品</li>
+<li>对业务稳定性、可控性要求较高的系统</li>
+</ul>
+<h2 id="不适合的场景" tabindex="-1"><a class="header-anchor" href="#不适合的场景"><span>不适合的场景</span></a></h2>
+<ul>
+<li>一次性活动页/营销页</li>
+<li>极简工具类项目</li>
+<li>生命周期&lt;3个月的实验性项目</li>
+<li>仅单端、无长期维护计划的应用</li>
+</ul>
+<blockquote>
+<p><strong>重要提示</strong>：NucleusX 并非&quot;开发提速工具&quot;，而是&quot;长期治理工具&quot;。</p>
+</blockquote>
+<h2 id="商业授权" tabindex="-1"><a class="header-anchor" href="#商业授权"><span>商业授权</span></a></h2>
+<div class="hint-container tip">
+<p class="hint-container-title">重要提示</p>
+<p><code v-pre>@nucleusx/core</code> 并非免费商业软件。</p>
+<ul>
+<li>✔ 允许：技术评估、内部验证、非商业试用</li>
+<li>❌ 禁止：未授权的商业项目、生产环境使用</li>
+<li>🔒 商业使用需获得正式授权</li>
+</ul>
+<p>商业授权请联系：<strong>contact@nucleusx.dev</strong></p>
+</div>
+</div></template>
+
+
